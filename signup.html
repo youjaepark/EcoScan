@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - EcoScan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Sign Up</h2>
+            <form id="signupForm">
+                <div class="input-group">
+                    <label for="fName">First Name</label>
+                    <input type="text" id="fName" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="lName">Last Name</label>
+                    <input type="text" id="lName" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="rEmail">Email</label>
+                    <input type="email" id="rEmail" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="rPassword">Password</label>
+                    <input type="password" id="rPassword" required>
+                </div>
+                
+                <button type="submit" id="submitSignUp" class="btn">Sign Up</button>
+                
+                <div class="links">
+                    <p>Already have an account? <button type="button" onclick="window.location.href='login.html'">Login</button></p>
+                </div>
+            </form>
+            <div id="signUpMessage" class="message"></div>
+        </div>
+    </div>
+</body>
+</html> 

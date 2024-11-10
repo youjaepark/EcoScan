@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWaste - Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                <img src="images/icon.png" alt="EcoScan Icon" class="navbar__icon">
+                EcoScan
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Leaderboard</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/signup.html" class="button" id="authButton">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Progress Section -->
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+    <div class="level-indicator">Level 1 - 0%</div>
+
+    <!-- Leaderboard Section -->
+    <div class="leaderboard">
+        <div class="leaderboard__container">
+            <h1>Global Leaderboard</h1>
+            <div class="leaderboard__stats">
+                <div class="stats__card">
+                    <h2>Your Stats</h2>
+                    <p>Total Points: <span id="loggedUserScore">0</span></p>
+                    <p>Current Level: <span id="currentLevel">1</span></p>
+                    <p>Items Recycled: <span id="itemsRecycled">0</span></p>
+                </div>
+                <div class="leaderboard__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>User</th>
+                                <th>Points</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboardBody">
+                            <!-- Will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="tech.js"></script>
+</body>
+</html>

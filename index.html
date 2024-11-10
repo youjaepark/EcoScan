@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Scan</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+            <img src="images/icon.png" alt="EcoScan Icon" class="navbar__icon">
+            EcoScan
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/tech.html" class="navbar__links">Leaderboard</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="/signup.html" class="button" id="authButton">Sign Up <span class="points-badge">+5 pts</span></a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="main" style="background: #141414;">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Next Generation Waste Management</h1>
+          <h2>Technology that makes disposing easy</h2>
+          <p>Click the button below to get started!</p>
+          <button class="main__btn" id="startCameraBtn">Take Photo</button>
+        </div>
+        <div class="main__img--container">
+          <video id="main__img" autoplay style="display: none;"></video>
+          <img src="images/pic1.svg" alt="pic" id="static__img">
+          <button class="main__btn" id="captureBtn" style="display: none;">Take Picture</button>
+          <div class="photo-controls" style="display: none;">
+            <button class="main__btn" id="retakeBtn">Retake Photo</button>
+            <button class="main__btn" id="confirmBtn">Confirm Photo</button>
+          </div>
+          <canvas id="canvas" style="display: none;"></canvas>
+          <textarea id="resultText" class="result-textbox" placeholder="Analysis results will appear here..." style="display: none;"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" style="background: #141414;">
+      <h1 style="text-align: center;">See what the hype is about!</h1>
+      <div class="services__container">
+        <div class="services__card">
+            <h2>About Us</h2>
+            <p><strong>Team EcoScan</strong></p>
+            <button onclick="window.location.href='/team.html'" data-hover="Click to meet the team">Team</button>
+        </div>
+        <div class="services__card">
+            <h2>Mission Statement</h2>
+            <p><strong>AI Powered Technology</strong></p>
+            <button onclick="window.location.href='/mission.html'" data-hover="Click to learn about our AI technology">Why EcoScan?</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

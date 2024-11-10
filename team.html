@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWaste - Meet the Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                <img src="images/icon.png" alt="EcoScan Icon" class="navbar__icon">
+                EcoScan
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Leaderboard</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/signup.html" class="button" id="authButton">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Team Section -->
+    <div class="team">
+        <div class="team__container">
+            <h1>Meet the Team</h1>
+            <div class="team__grid">
+                <div class="team__member">
+                    <h2>Anish</h2>
+                    <p><strong>Role:</strong> Full Stack Developer</p>
+                    <p><strong>Expertise:</strong> AI Integration & Frontend Development</p>
+                    <p>Leading the development of our AI-powered waste recognition system and database architecture.</p>
+                </div>
+                <div class="team__member">
+                    <h2>Evan</h2>
+                    <p><strong>Role:</strong> Backend Developer</p>
+                    <p><strong>Expertise:</strong> Connecting the Frontend and Backend and Database Architecture</p>
+                    <p>Creating intuitive messages and ensuring seamless user experience across all platforms.</p>
+                </div>
+                <div class="team__member">
+                    <h2>Aditya</h2>
+                    <p><strong>Role:</strong> Machine Learning Engineer</p>
+                    <p><strong>Expertise:</strong> Computer Vision</p>
+                    <p>Developing and training our waste classification models for accurate waste-management recommendations.</p>
+                </div>
+                <div class="team__member">
+                    <h2>Youjae</h2>
+                    <p><strong>Role:</strong> Programmer</p>
+                    <p><strong>Expertise:</strong> System Architecture</p>
+                    <p>Coordinating Code functionality and ensuring project milestones are met efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 
