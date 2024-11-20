@@ -1,4 +1,4 @@
-# EcoScan
+# EcoScan ([ecoscan-c2a93.web.app](https://ecoscan-c2a93.web.app))
 
 **Simplifying Recycling for a Better Tomorrow, Today**
 
@@ -72,10 +72,5 @@ Future developments for EcoScan include:
 - **OpenAI API**  
 - **Python**  
 - **PythonAnywhere**
-
----
-
-## Try It Out
-- **Website**: [ecoscan-c2a93.web.app](https://ecoscan-c2a93.web.app)
 
 Join us in making recycling effortless and impactful with EcoScan! 🌍
